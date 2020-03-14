@@ -17,8 +17,9 @@ const fetchSpecifiedDrivers = (drivers, func) => {
 }
 
 function selectDifferentDrivers(arrayOfDrivers, function) {
-  if(function === returnFirstTwoDrivers) {
+  if (function === returnFirstTwoDrivers) {
     returnFirstTwoDrivers(arrayOfDrivers)
+  } else if (function === returnLastTwoDrivers) {
+    returnLastTwoDrivers(arrayOfDrivers)
   }
-
 }
