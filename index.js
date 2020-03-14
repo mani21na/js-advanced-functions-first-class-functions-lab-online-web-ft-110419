@@ -4,17 +4,15 @@ const returnLastTwoDrivers = drivers => drivers.slice(-2);
 
 const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
 
-function createFareMultiplier(multiplier){
-    return function(fare){
-        return fare * multiplier;
-    }
-}
+const createFareMultiplier = function (multiplyValue) {
+  return function (value) {
+    return multiplyValue * value;
+  };
+};
 
 const fareDoubler = createFareMultiplier(2);
 const fareTripler = createFareMultiplier(3);
-const fetchSpecifiedDrivers = (drivers, func) => {
-    return func(drivers)
-}
+
 
 const selectDifferentDrivers = function(drivers, whosDriving) {
   return whosDriving(drivers);
