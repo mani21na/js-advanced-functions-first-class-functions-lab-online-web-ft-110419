@@ -20,5 +20,5 @@ function selectDifferentDrivers(arrayOfDrivers, function) {
   if(function === returnFirstTwoDrivers) {
     returnFirstTwoDrivers(arrayOfDrivers)
   }
-    
+
 }
